@@ -1,6 +1,6 @@
 ﻿// the builder pattern code use  
 
-using Design_patterns_c_;
+using CreationalDesignPatterns;
   // Create a GamingComputerBuilder instance
         IComputerBuilder builder = new GamingComputerBuilder();
         
