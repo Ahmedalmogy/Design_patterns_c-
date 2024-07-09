@@ -1,12 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// the builder pattern code use  
 
 using Design_patterns_c_;
- TextDocument originalDoc = new TextDocument { Content = "Hello, World!" };
+  // Create a GamingComputerBuilder instance
+        IComputerBuilder builder = new GamingComputerBuilder();
         
-        // Use the copy constructor to create a new instance
-        TextDocument copiedDoc = new TextDocument(originalDoc);
-        copiedDoc.Content = "Hello, Copy Constructor!";
+        // Create a Director and construct the computer
+        Director director = new Director(builder);
+        director.Construct();
         
-        // Print original and copied documents
-        originalDoc.Print(); // Output: TextDocument: Hello, World!
-        copiedDoc.Print();   // Output: TextDocument: Hello, Copy Constructor!
+        // Get the constructed computer
+        Computer gamingComputer = builder.GetComputer();
+        
+        // Display the details of the computer
+        Console.WriteLine(gamingComputer);
