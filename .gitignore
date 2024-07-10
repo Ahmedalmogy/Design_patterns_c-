@@ -1,0 +1,29 @@
+# Visual Studio temporary/back-up files
+*.suo
+*.user
+*.sln.doc
+*.vbproj.doc
+*.resx
+*.obj
+*.pdb
+*.config
+*.xml
+
+# OS/IDE specific files
+[Bb]in*
+[Oo]bj*
+[Dd]ebug*
+[Tt]est[Rr]esults*
+[Nn]uGet/packages/*
+
+# Build artifacts
+*.dll
+*.exe
+*.pdb
+
+# Tests
+*.testsettings
+*.spec
+
+# Secret Management
+*.secrets.json
